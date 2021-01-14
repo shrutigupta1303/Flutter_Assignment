@@ -78,14 +78,14 @@ class SliderPage extends StatelessWidget {
 
             //Slider Container properties
             options: CarouselOptions(
-              height: 200.0,
+              height: 300.0,
               enlargeCenterPage: true,
               autoPlay: true,
               aspectRatio: 16 / 9,
               autoPlayCurve: Curves.fastOutSlowIn,
               enableInfiniteScroll: true,
               autoPlayAnimationDuration: Duration(milliseconds: 800),
-              viewportFraction: 0.8,
+              viewportFraction: 0.5,
             ),
           ),
         ],

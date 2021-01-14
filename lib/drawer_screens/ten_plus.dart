@@ -3,51 +3,39 @@ import 'package:neostore_app/main.dart';
 
 class TenPlusPage extends StatefulWidget {
   @override
-  _TenPlusPageState createState() => _TenPlusPageState();
+  _TenPlusOneScreenState createState() => _TenPlusOneScreenState();
 }
 
-class _TenPlusPageState extends State<TenPlusPage> {
+class _TenPlusOneScreenState extends State<TenPlusPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("10+1 Plan"),
         backgroundColor: appColor,
+        title: Text("10 + 1 Plan",
+          style: TextStyle(color: Colors.white),
+        ),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: EdgeInsets.only(top: 20, left: 30, right: 30),
-              child: TextFormField(
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: "Gotham Mediumm",
-                  //fontWeight: FontWeight.normal,
-                  fontSize: 20.0,
-                ),
-                cursorColor: Colors.white,
-                decoration: InputDecoration(
-                  hintText: "Username",
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white, width: 1),
-                  ),
-                  focusedBorder: new OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white, width: 1),
-                  ),
-                  prefixIcon: const Icon(
-                    Icons.person,
-                    color: Colors.white,
-                  ),
-                  hintStyle: TextStyle(
-                    color: Colors.white,
-                    fontFamily: "Gotham Medium",
-                    // fontWeight: FontWeight.normal,
-                    fontSize: 20.0,
-                  ),
-                ),
+      body: Container(
+        padding: new EdgeInsets.all(16.0),
+        decoration: new BoxDecoration(color: Colors.white),
+        child: new Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            new Card(
+              child: new Column(
+                children: <Widget>[
+                  new Padding(
+                      padding: new EdgeInsets.all(7.0),
+                      child: new Row(
+                        children: <Widget>[
+
+                        ],
+                      ))
+                ],
               ),
-            ),
+            )
           ],
         ),
       ),
